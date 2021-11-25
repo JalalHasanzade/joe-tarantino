@@ -1,0 +1,91 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+h2{
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+
+p {
+  float: bottom;
+  border: 2px solid black;
+  background-color: grey;
+  
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+  font-family: Times New Roman;
+  color: black;
+  
+}
+
+section {
+  float: right;
+  max-width: 150px;  
+  background-color: red;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+  background-color: grey
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3 {
+    float: left;
+    border: 1px solid green;
+  }
+  .col-lg-1 {
+    width: 33.33%;
+  }
+  .col-lg-2 {
+    width: 33.33%;
+  }
+  .col-lg-3 {
+    width: 33.33%;
+  }
+  
+}
+
+/**********Tablet **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3 {
+    float: left;
+    border: 1px solid green;
+  }
+  .col-md-1 {
+    width: 50%;
+  }
+  .col-md-2 {
+    width: 50%;
+  }
+  .col-md-3 {
+    width: 100%;
+  }
+  
+}
+@media (max-width: 767px) {
+  .col-lg-1, .col-lg-2, .col-lg-3 {
+    float: left;
+    border: 1px solid green;
+  }
+  .col-sm-1 {
+    width: 100%;
+  }
+  .col-sm-2 {
+    width: 100%;
+  }
+  .col-sm-3 {
+    width: 100%;
+  }
+  
